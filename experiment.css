@@ -1,0 +1,135 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+}
+
+#logo{
+    margin: 5px 5px;
+}
+
+#slogan{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+}
+
+#menu1{
+    display: none;
+}
+
+#menu2{
+    display: none;
+}
+
+#button1{
+    cursor: pointer;
+}
+
+#button2{
+    cursor: pointer;
+}
+
+ul,li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.picintext{
+    max-width: 1280px;
+}
+
+#text{
+    width: 100%;
+    max-width: 1280px;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+}
+
+.text{
+    font-size: 2rem;
+    color: palevioletred;
+}
+
+main {
+    width: 100%;
+    max-width: 1280px;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(100%*9/16);
+}
+
+
+.imgcontainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.img {
+    position: relative;
+    height: 100%;
+    white-space: nowrap;
+    transition: 1s right cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 1s left cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.pic {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.imgtransition {
+    left: 0;
+    transition: left 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.dots {
+    left: 50%;
+    transform: translateX(50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.5rem 0.2rem;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.dotactive{
+    background-color: red;
+    opacity: 1;
+    cursor: pointer;
+}
